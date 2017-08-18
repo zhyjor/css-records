@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #div1,#div2{
+            width:200px;
+            height:200px;
+            background-color:red;
+            position: relative;
+            z-index:1;
+        }
+        #div2{
+            background-color:green;
+            z-index:0;
+        }
+        #div1_1,#div2_1{
+            width:100px;
+            height:100px;
+            background-color:black;
+        }
+        #div1_1{
+            position:relative;
+            z-index:-100;
+            left:80px;
+            top:140px;
+        }
+        #div2_1{
+            background-color:yellow;
+            z-index:999;
+            position: relative;
+            left:160px;
+            top:-50px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="div1">
+    我是div1
+    <div id="div1_1">
+        我是div1_1
+    </div>
+</div>
+<div id="div2">
+    我是div2
+    <div id="div2_1">
+        我是div2_1
+    </div>
+</div>
+</body>
+</html>
