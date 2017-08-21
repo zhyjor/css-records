@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing:border-box;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body{
+            height: 100%;
+        }
+
+        body{
+            display: -webkit-box;
+            display:-moz-box;
+            display:box;
+            -moz-box-orient: vertical;
+            -webkit-box-orient: vertical;
+            box-orient:vertial;
+            width:100%;
+        }
+
+        #header,
+        #footer{
+            width:100%;
+            padding:10px;
+            background-color: #ccc;
+        }
+
+        #sidebar-left,
+        #sidebar-right{
+            width:220px;
+            padding: 10px;
+            background-color: #f36;
+        }
+
+        #page{
+            width:100%;
+            display:-moz-box;
+            display: -webkit-box;
+            display:box;
+        }
+        #main{
+            background-color: #e66;
+            padding: 10px;
+            margin: 0 10px;
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            box-flex:1;
+            /*重排主内容的顺序*/
+            -moz-box-ordinal-group:2;
+            -webkit-box-ordinal-group: 2;
+            box-ordinal-group:2;
+        }
+        #sidebar-right{
+            /*重新排右边栏顺序*/
+            -moz-box-ordinal-group:3;
+            -webkit-box-ordinal-group:3;
+            box-ordianl-group:3;
+        }
+        #page{
+            -moz-box-flex:1;
+            -webkit-box-flex:1;
+            box-flex:1;
+        }
+
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>Header</h1>
+</div>
+<div id="page">
+    <div id="main">
+        <h1>主内容</h1>
+    </div>
+    <div id="sidebar-left">
+        <h1>左边栏PWA 入门: 写个非常简单的 PWA 页面 - 知乎专栏
+            这篇文章里我们来完成一个非常简单的 PWA 页面。 一个PWA 应用首先是一个网页, 可以通过 Web 技术编写出一个网页应用. 随后添加上 App Manifest 和 Service ...
+            https://zhuanlan.zhihu.com/p/2...  - 百度快照
+            我们真的需要网页版App吗?Google PWA的困局 | 雷锋网
+
+            2016年6月9日 - 作为开发者我们知道,PWA归根结底还是个网页,当然,是个更好的网页。但是Chrome希望让用户感受到不一样:“哦这是个普通网页;哦这个Chrome告诉我可以添加到...
+            https://www.leiphone.com/news/...  - 百度快照
+            PWA – WEB前端开发 - 专注前端开发,关注用户体验
+
+            分类前端工具, 前端资源, 开源项目 标签CSS净化, Front End Development, JavaScript, PWA, Programming, Web Development, copy-webpack, eslint, isomorphic-...
+            www.css88.com/archives...  - 百度快照
+            PWA相关知识 - twinslizzy的博客 - CSDN博客
+            2017年1月10日 - http://www.leiphone.com/news/201606/UEiart497WUzS62u.html我们真的需要网页版App吗?Google PWA的困局其实回来的两周里,我对Progressive Web App(以...
+            blog.csdn.net/u0100096...  - 百度快照
+            改造你的网站,变身 PWA - 闻醉 - SegmentFault
+
+            最近有很多关于 Progressive Web Apps(PWAs)的消息,很多人都在问这是不是(移动)web 的未来。我不想陷入native app 和 PWA 的纷争,但是有一件事是确定的 --...
+            https://segmentfault.com/a/119...  - 百度快照
+            Google宣布PWA将获得与Android原生应用同等的待遇与权限_Linux...
+            2017年2月21日 - 自从Google提出PWA(Progressive Web Apps,渐进式网页应用)概念之后,它就持续受到移动开发界的关注。PWA的目标是基于现代化浏
+            www.linuxidc.com/Linux...  - 百度快照
+            网传百度将会与谷歌合作共推PWA - 站长之家
+
+            2017年1月13日 - 首先我们应该了解什么是PWA,通俗来说,pwa就是渐进式web应用(progressive web app)。简单来说相当于网页APP的意思,早在16年初,google便提出pwa,希望提供...
+            www.chinaz.com/news/20...  - 百度快照
+            PWA新手教程:手把手教你制作自己的网页“小程序”_TechWeb
+            2017年7月18日 - 编者按:在一般互联网用户看来,PWA就是网页小程序(如下图)。PWA即“渐进式网页应用”(Progressive Web App)。我
+            www.techweb.com.cn/new...  - 百度快照
+            小程序现实成“虚”?传百度要推PWA怼微信_搜狐科技_搜狐网
+
+            2017年1月12日 - 然而从现实来看,受制于BAT竞争、用户习惯等种种因素,微信试图用小程序占领入口的野心恐难实现,有消息称,百度将在年后推出PWA,或将再次掀起移动互联网...
+            it.sohu.com/20170112/n...  - 百度快照
+            相关搜索</h1>
+    </div>
+    <div id="sidebar-right">
+        <h1>右边栏</h1>
+    </div>
+</div>
+<div id="footer">
+    <p>我是页面页脚</p>
+</div>
+
+</body>
+</html>
