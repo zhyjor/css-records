@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    axios.get('http://carwasher.ewpe.com.cn/washer/comm/dots',{
+        params: {
+            radius: 5000,
+            dotType: 'F50',
+            lat: 124.069386,
+            lng: 23.969305,
+            token: 'obFV-0ntes_hbfwoaWjhVrZ--e4I'
+        }
+    })
+        .then(function (response) {
+            console.log(response.data);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+</script>
+</body>
+</html>

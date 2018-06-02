@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <title>Title</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        .warpper {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .left-avater {
+            height: 30px;
+            flex: 1 1 auto;
+            background: green;
+            display: flex;
+        }
+
+        .right-panel {
+            height: 30px;
+            flex: 7 1 auto;
+            background: red;
+            display: flex;
+        }
+
+        .eil {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 1.3125;
+        }
+
+        .nickname {
+            flex: 0 1 auto;
+            width: 100px;
+        }
+
+        .realname {
+            flex: 0 1 auto;
+            background: gainsboro;
+        }
+    </style>
+</head>
+<body>
+<div class="warpper">
+    <div class="left-avater eil">
+aaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+    <div class="right-panel">
+        <div class="nickname eil">
+            woooooooowoooooooowoooooooowoooooooowoooooooowoooooooowoooooooo
+        </div>
+        <div class="realname eil">
+            fffffffffffffffffffffffffffffffffffffff
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
