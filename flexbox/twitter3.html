@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+    <title>Title</title>
+    <style>
+        .main {
+            display: flex;
+            flex: 1 1 auto;
+        }
+
+        .content {
+            overflow: hidden; /*也可以用 width:0 代替*/
+            flex: 0 0 auto; /*关于flex的属性值请看官网，这里相当于 flex-grow */
+
+            display: flex;
+            max-width: 100%;
+        }
+
+        .h-wrapper{
+            border: 1px solid red;
+            flex: 1 0 auto;
+            max-width: 100%;
+        }
+        .name {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .h-wrapper2{
+            border: 1px solid red;
+            flex: 1 1 auto;
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+<a class="main">
+    <div class="content">
+        <div class="h-wrapper">
+            <h4 class="name">a namea namea namea namea</h4>
+        </div>
+        <div class="h-wrapper2">
+            <h4 class="name">a namea namea namea namea</h4>
+        </div>
+    </div>
+</a>
+</body>
+</html>
